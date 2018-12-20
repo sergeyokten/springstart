@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+    <bean class="components.Hammer" id="hammer">
+        <property name="weight" value="100"/>
+    </bean>
+
+    <bean class="components.Saw" id="saw">
+        <property name="type" value="handed"/>
+    </bean>
+
+    <bean class="components.Worker" id="worker">
+        <property name="id" value="100500"/>
+        <property name="name" value="kokos"/>
+        <property name="tool" ref="saw"/>
+
+    </bean>
+</beans>

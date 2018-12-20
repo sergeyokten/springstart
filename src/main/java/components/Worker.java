@@ -2,7 +2,7 @@ package components;
 
 import org.springframework.stereotype.Component;
 
-@Component
+//@Component
 public class Worker {
     private int id = 1;
     private String name = "vasya";
